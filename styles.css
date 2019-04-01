@@ -55,7 +55,7 @@ p {
 
 .form-container input {
   display: block;
-  margin: auto auto 2% auto;
+  margin: auto auto 5% auto;
   width: 90%;
   border-radius: 4px;
   border: 1px #EBEBEB solid;
@@ -65,5 +65,21 @@ p {
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 2%;
+}
+
+.form-container button {
+  float: right;
+  border-color: unset;
+  border-style: unset;
+  border-width: unset;
+  background: lightcoral;
+  font-size: calc(1.5px + 1.5vw);
+  border-radius: 2px;
+  padding: 8px 15px;
+}
+
+.form-container button:hover {
+  cursor: pointer;
+  background: lightgreen;
 }
 /*# sourceMappingURL=styles.css.map */
