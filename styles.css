@@ -39,6 +39,10 @@ p {
   margin: 5% auto;
 }
 
+.form-container {
+  margin-bottom: 5%;
+}
+
 .form-container .flex-col-6 {
   border: 1px #EBEBEB solid;
   padding: 5% 2%;
@@ -81,5 +85,25 @@ p {
 .form-container button:hover {
   cursor: pointer;
   background: lightgreen;
+}
+
+.form-container .input-container {
+  position: relative;
+}
+
+.form-container .error-msg {
+  position: absolute;
+  bottom: -26%;
+  left: 4%;
+  font-size: calc(1.2px + 1.2vw);
+  color: #dc143c;
+}
+
+.form-container .password-container input {
+  margin: auto auto 2% auto;
+}
+
+.form-container .password-container .error-msg {
+  bottom: -14%;
 }
 /*# sourceMappingURL=styles.css.map */
