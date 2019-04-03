@@ -39,9 +39,13 @@ p {
   margin: 5% auto;
 }
 
+.form-container {
+  margin-bottom: 5%;
+}
+
 .form-container .flex-col-6 {
   border: 1px #EBEBEB solid;
-  padding: 5% 2%;
+  padding: 5% 2% 0;
   border-radius: 6px;
   -webkit-box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
           box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
@@ -76,10 +80,33 @@ p {
   font-size: calc(1.5px + 1.5vw);
   border-radius: 2px;
   padding: 8px 15px;
+  margin-top: 8%;
+  margin-bottom: 10%;
 }
 
 .form-container button:hover {
   cursor: pointer;
   background: lightgreen;
+}
+
+.form-container .input-container {
+  position: relative;
+}
+
+.form-container .error-msg {
+  display: none;
+  position: absolute;
+  bottom: -26%;
+  left: 4%;
+  font-size: calc(1.2px + 1.2vw);
+  color: #dc143c;
+}
+
+.form-container .password-container input {
+  margin: auto auto 2% auto;
+}
+
+.form-container .password-container .error-msg {
+  bottom: -14%;
 }
 /*# sourceMappingURL=styles.css.map */

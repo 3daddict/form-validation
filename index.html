@@ -18,13 +18,25 @@
                 <div class="flex-row">
                     <div class="flex-col-3"></div>
                     <div class="flex-col-6">
-                        <label for="name">Name</label>
-                        <input name="firstAndLast" type="text" placeholder="First Last" />
-                        <label for="email">Email</label>
-                        <input name="email" type="email" placeholder="example@hooli.com" />
-                        <label for="password">Password</label>
-                        <input name="passwordOne" type="password" placeholder="The longer the better..." autocomplete="new-password" />
-                        <input name="passwordTwo" type="password" autocomplete="new-password" placeholder="Twice for good luck" />
+                        <div class="input-container">
+                            <label for="name">Name</label>
+                            <input id="nameInput" name="firstAndLast" type="text" placeholder="First Last" />
+                            <span class="error-msg" id="nameSpan">Please enter your full name</span>
+                        </div>
+                        
+                        <div class="input-container">
+                            <label for="email">Email</label>
+                            <input name="email" type="email" placeholder="example@hooli.com" />
+                            <span class="error-msg">Please enter a valid email</span>
+                        </div>
+                        
+                        <div class="input-container password-container">
+                            <label for="password">Password</label>
+                            <input name="passwordOne" type="password" placeholder="The longer the better..." autocomplete="new-password" />
+                            <input name="passwordTwo" type="password" autocomplete="new-password" placeholder="Twice for good luck" />
+                            <span class="error-msg">Uh oh passwords don't match</span>
+                        </div>
+                        
                         <button type="submit">Submit Form</button>
                     </div>
                     <div class="flex-col-3"></div>
